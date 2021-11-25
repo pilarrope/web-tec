@@ -1,0 +1,15 @@
+
+/* Social media icons*/
+.fa {
+  padding: 10px;
+  text-align: right;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+footer {
+ 
+  padding: 3px;
+  background-color: #212529;
+  color: white;
