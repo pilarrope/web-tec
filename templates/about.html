@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pilar's experiments</title>
+  <link rel="icon" type="image/x-icon" href="static/img/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href={{ url_for('home') }}><img class="img-fluid" src="static/img/logo.png" alt="Logo icon"></a>
+	
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href={{ url_for('home') }}>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href={{ url_for('recipes') }}>Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href={{ url_for('tips') }}>Tips</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link active" href={{ url_for('about') }}>About me</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href={{ url_for('get_contact') }}>Contact me</a>
+        </li>
+		 
+      </ul>
+     <ul class="nav justify-content-end">
+		 <li> 
+          <a href="https://www.facebook.com/" target="_blank"> <i class="fa bi-facebook"  style="font-size: 24px; color:#3B5998;"></i></a>
+        </li>
+		<li class="nav-item float:right;">
+          <a href="https://www.instagram.com/" target="_blank"> <i class="fa bi-instagram" style="font-size: 24px; color:#833AB4;"></i></a>
+        </li>
+		<li class="nav-item float:right;">
+          <a href="https://www.youtube.com/" target="_blank"> <i class="fa bi-youtube" style="font-size: 24px; color: red;"></i></a>
+        </li>
+		</ul>
+    </div>
+		
+	
+	
+  </div>
+</nav>
+<img style="width:100%; margin-top:100px; " id="image-banner" src="static/img/banner1.jpg" alt="Banner img">
+
+<div class="container-fluid" style="margin-top:30px">
+
+<br>
+<div class="container-sm text-center">
+
+<div class="row">
+    <div class="col-sm-6 p-3 ">
+	<h3>Hello! I'm Pilar</h3>
+<br>
+
+<p>I study web design and development. But a change of direction in my personal life made me enter the world of cooking. And that's how Let's cooking with Pilar was born. The space where I put my soul and a hobby that fascinates me and fills me with life.</p>
+<p>I'm passionate about photography, music, and I can't resist cheese. I am attracted to everything homemade, totally personalized and that hides a story.</p>
+
+<p>I like to read, to be impregnated with new concepts, with ideas to carry out.</p>
+
+<p>Every little detail inspires me, every word received, every criticism, the smell of what I'm cooking and that reminds me of all those recipes that I have yet to discover.</p>
+
+<p>Self-taught in the kitchen, constantly searching for new flavors, unknown recipes, ingredients and challenges that push me to learn and improve every day. </p>
+<p>Come on, let's cook!</p>
+	</div>
+    <div class="col-sm-6 p-3">
+	<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/img/pic1.jpeg" alt="Me cooking" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/pic2.jpeg" alt="Me reading" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/pic3.jpeg" alt="Me in the nature exploring" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+	</div>
+  </div>
+
+
+
+</div>
+</div>
+
+<br>
+
+
+<footer >
+
+<div class="row">
+   
+    <div class="col-sm-4 p-3 text-white">
+     <p>Author: Pilar Rodriguez Perez &copy;<br> 
+		<a href={{ url_for('accessibility') }}>Accesibility statement</a>  </p>
+    </div>
+    <div class="col-sm-4 p-3  text-white"></div>
+    <div class="col-sm-4 p-3 text-white "> 
+	
+<a href="https://www.facebook.com/" target="_blank"> <i class="fa bi-facebook"  style="font-size: 24px; color:#3B5998;"></i></a>
+<a href="https://www.instagram.com/" target="_blank"> <i class="fa bi-instagram" style="font-size: 24px; color:#833AB4;"></i></a>
+<a href="https://www.youtube.com/" target="_blank"> <i class="fa bi-youtube" style="font-size: 24px; color: red;"></i></a>
+	</div> 
+
+</div>
+    
+</footer>
+</body>
+</html>
+
+
